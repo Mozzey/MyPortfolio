@@ -1,0 +1,25 @@
+{
+  "name": "MyPortfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"npm run build:sass",
+    "build:sass": "node-sass --watch public/stylesheets/sass/main.sass -o public/stylesheets/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mozzey/MyPortfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mozzey/MyPortfolio/issues"
+  },
+  "homepage": "https://github.com/Mozzey/MyPortfolio#readme",
+  "dependencies": {
+    "node-sass": "^4.8.3"
+  }
+}
