@@ -96,6 +96,9 @@ header
                 &:hover
                     @extend %header-btn-hover
 
+    #mobile-arrow
+        display: none
+
 .black ul
         background: #999
         opacity: 0.8
@@ -130,7 +133,17 @@ header
             font-size: 1.2em
 
             .btn
-                font-size: 0.7em
+                display: none 
+
+            #mobile-arrow
+                display: inline-block
+                margin-top: 250px
+                color: #fff
+                
+                a
+                    color: #fff
+                    font-size: 1.5em
+                
 
         nav
             ul
