@@ -1,3 +1,40 @@
+nav
+    position: fixed
+    width: 100%
+    z-index: 1
+
+    .black ul
+        background: #000
+
+    ul
+        list-style: none
+        background: rgba(0,0,0,0)
+        overflow: hidden
+        color: #fff
+        padding: 0
+        text-align: center
+        margin: 0
+        transition: 1s
+
+        li
+            display: inline-block
+            padding: 20px
+
+            a
+                text-decoration: none
+                color: #000
+                font-size: 20px
+
+    .menu-icon
+        width: 100%
+        background: #000
+        text-align: right
+        box-sizing: border-box
+        padding: 15px 24px
+        cursor: pointer
+        color: #fff
+        display: none
+
 .pimg1
     position: relative
     min-height: 100%
@@ -8,11 +45,37 @@
     background-attachment: fixed
     opacity: 0.7
 
-.ptext
-    position: absolute
-    width: 100%
-    text-align: center
-    top: 40%
-    font-size: 2.6em
-    color: #fff
+    .ptext
+        position: absolute
+        width: 100%
+        text-align: center
+        top: 40%
+        font-size: 2.6em
+        color: #fff
 
+// MEDIE QUERY
+
+@media(max-width: 580px)
+    nav
+        ul
+            max-height: 0px
+            background: #000
+            color: #fff
+
+            li
+                box-sizing: border-box
+                width: 100%
+                padding: 24px 0
+                text-align: center
+
+        .black ul
+                background: #000
+
+        .showing
+                max-height: 20em
+
+        .menu-icon
+                display: block
+
+
+    
