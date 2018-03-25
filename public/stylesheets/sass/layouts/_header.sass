@@ -1,57 +1,61 @@
-nav
-    position: fixed
+header
     width: 100%
-    z-index: 1
+    height: 950px
 
-    ul
-        list-style: none
-        background: rgba(0,0,0,0)
-        overflow: hidden
-        color: #fff
-        padding: 0
-        text-align: center
-        margin: 0
-        transition: 1s
-
-        li
-            display: inline-block
-            padding: 20px
-
-            &:hover
-                background-color: #777
-
-            a
-                text-decoration: none
-                color: #fff
-                font-size: 25px
-
-    .menu-icon
+    .pimg1
+        position: absolute
+        min-height: 100%
         width: 100%
-        background: #000
-        text-align: right
-        box-sizing: border-box
-        padding: 15px 24px
-        cursor: pointer
-        color: #fff
-        display: none
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+        background: #333 url('/../public/img/header.jpg')
+        background-attachment: fixed
+        opacity: 0.6
+        z-index: -1
 
-.black ul
-        background: #000
-
-.pimg1
-    position: relative
-    min-height: 100%
-    background-size: cover
-    background-repeat: no-repeat
-    background-position: center
-    background-image: url('/../public/img/header.jpg')
-    background-attachment: fixed
-    opacity: 0.7
-
-    #mainTitle
+    nav
+        position: fixed
         width: 100%
+        z-index: 9001
+
+        ul
+            font-family: $shadowLight
+            list-style: none
+            background: rgba(0,0,0,0)
+            overflow: hidden
+            color: #fff
+            padding: 0
+            text-align: center
+            margin: 0
+            transition: 1s
+
+            li
+                display: inline-block
+                padding: 20px
+
+                &:hover
+                    text-decoration: underline
+
+
+                a
+                    text-decoration: none
+                    color: #fff
+                    font-size: 2.5em
+
+        .menu-icon
+            width: 100%
+            background: #999
+            opacity: 0.8
+            text-align: right
+            box-sizing: border-box
+            padding: 15px 24px
+            cursor: pointer
+            color: #fff
+            display: none
 
     .ptext
+        margin: 0 auto
         position: absolute
         width: 100%
         text-align: center
@@ -59,41 +63,93 @@ nav
         font-size: 2.6em
         color: #fff
         font-family: $fatFace
+        -webkit-text-stroke: 1px #888
+        paint-order: stroke fill
+
+        .main-title
+            width: 100%
+            opacity: 1.0
+            
+            h1
+                letter-spacing: 5px
 
         span
             font-family: $shadowLight
 
+        #arrow
+            margin-top: 50px
+
+    .btn
+        color: #fff
+        margin: 150px auto 0
+        width: 20%
+
+        a
+            text-decoration: none
+            color: #fff
+
+            span
+                border: 2px solid #fff
+                padding: 0 5px
+                width: auto
+                
+                &:hover
+                    @extend %header-btn-hover
+
+.black ul
+        background: #999
+        opacity: 0.8
+
 // MEDIA QUERY
 
-@media(max-width: 685px)
-    #main-title
-        font-size: 1.7em
+@media(max-width: 900px)
+    header
+        .ptext
+            font-size: 1.8em
+
+            span
+                -webkit-text-stroke: 0
+                color: #000
+
+            .btn span
+                border: 2px solid black
+                
+    
+@media(max-width: 768px)
+    header
+        .ptext
+            font-size: 1.4em
 
 
 @media(max-width: 580px)
-    nav
-        ul
-            max-height: 0px
-            background: #000
-            color: #fff
-
-            li
-                box-sizing: border-box
-                width: 100%
-                padding: 24px 0
-                text-align: center
-
-        .showing
-            max-height: 20em
-
-        .menu-icon
-            display: block
-
     .black ul
-            background: #000
+        background: #999
+        opacity: 0.8
+    header
+        .ptext
+            font-size: 1.2em
 
-    .pimg1
-        font-size: 0.8em
+            .btn
+                font-size: 0.7em
+
+        nav
+            ul
+                max-height: 0px
+                background: #999
+                opacity: 0.8
+                color: #fff
+
+                li
+                    box-sizing: border-box
+                    width: 100%
+                    padding: 24px 0
+                    text-align: center
+
+            .showing
+                max-height: 30em
+
+            .menu-icon
+                display: block
 
 
     

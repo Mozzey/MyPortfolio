@@ -1,104 +1,164 @@
+header .btn a span:hover {
+  border: 2px solid #666;
+  background-color: #999;
+  opacity: 0.7;
+  color: #fff; }
+
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
   height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.8em;
   color: #666; }
 
-nav {
-  position: fixed;
+header {
   width: 100%;
-  z-index: 1; }
-  nav ul {
-    list-style: none;
-    background: transparent;
-    overflow: hidden;
-    color: #fff;
-    padding: 0;
-    text-align: center;
-    margin: 0;
-    transition: 1s; }
-    nav ul li {
-      display: inline-block;
-      padding: 20px; }
-      nav ul li:hover {
-        background-color: #777; }
-      nav ul li a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 25px; }
-  nav .menu-icon {
+  height: 950px; }
+  header .pimg1 {
+    position: absolute;
+    min-height: 100%;
     width: 100%;
-    background: #000;
-    text-align: right;
-    box-sizing: border-box;
-    padding: 15px 24px;
-    cursor: pointer;
-    color: #fff;
-    display: none; }
-
-.black ul {
-  background: #000; }
-
-.pimg1 {
-  position: relative;
-  min-height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("/../public/img/header.jpg");
-  background-attachment: fixed;
-  opacity: 0.7; }
-  .pimg1 #mainTitle {
-    width: 100%; }
-  .pimg1 .ptext {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: #333 url("/../public/img/header.jpg");
+    background-attachment: fixed;
+    opacity: 0.6;
+    z-index: -1; }
+  header nav {
+    position: fixed;
+    width: 100%;
+    z-index: 9001; }
+    header nav ul {
+      font-family: "Shadows Into Light", cursive;
+      list-style: none;
+      background: transparent;
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: center;
+      margin: 0;
+      transition: 1s; }
+      header nav ul li {
+        display: inline-block;
+        padding: 20px; }
+        header nav ul li:hover {
+          text-decoration: underline; }
+        header nav ul li a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 2.5em; }
+    header nav .menu-icon {
+      width: 100%;
+      background: #999;
+      opacity: 0.8;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none; }
+  header .ptext {
+    margin: 0 auto;
     position: absolute;
     width: 100%;
     text-align: center;
     top: 40%;
     font-size: 2.6em;
     color: #fff;
-    font-family: "Abril Fatface", cursive; }
-    .pimg1 .ptext span {
+    font-family: "Abril Fatface", cursive;
+    -webkit-text-stroke: 1px #888;
+    paint-order: stroke fill; }
+    header .ptext .main-title {
+      width: 100%;
+      opacity: 1.0; }
+      header .ptext .main-title h1 {
+        letter-spacing: 5px; }
+    header .ptext span {
       font-family: "Shadows Into Light", cursive; }
+    header .ptext #arrow {
+      margin-top: 50px; }
+  header .btn {
+    color: #fff;
+    margin: 150px auto 0;
+    width: 20%; }
+    header .btn a {
+      text-decoration: none;
+      color: #fff; }
+      header .btn a span {
+        border: 2px solid #fff;
+        padding: 0 5px;
+        width: auto; }
 
-@media (max-width: 685px) {
-  #main-title {
-    font-size: 1.7em; } }
+.black ul {
+  background: #999;
+  opacity: 0.8; }
+
+@media (max-width: 900px) {
+  header .ptext {
+    font-size: 1.8em; }
+    header .ptext span {
+      -webkit-text-stroke: 0;
+      color: #000; }
+    header .ptext .btn span {
+      border: 2px solid black; } }
+
+@media (max-width: 768px) {
+  header .ptext {
+    font-size: 1.4em; } }
 
 @media (max-width: 580px) {
-  nav ul {
+  .black ul {
+    background: #999;
+    opacity: 0.8; }
+  header .ptext {
+    font-size: 1.2em; }
+    header .ptext .btn {
+      font-size: 0.7em; }
+  header nav ul {
     max-height: 0px;
-    background: #000;
+    background: #999;
+    opacity: 0.8;
     color: #fff; }
-    nav ul li {
+    header nav ul li {
       box-sizing: border-box;
       width: 100%;
       padding: 24px 0;
       text-align: center; }
-  nav .showing {
-    max-height: 20em; }
-  nav .menu-icon {
-    display: block; }
-  .black ul {
-    background: #000; }
-  .pimg1 {
-    font-size: 0.8em; } }
+  header nav .showing {
+    max-height: 30em; }
+  header nav .menu-icon {
+    display: block; } }
 
-h2 {
-  text-align: center;
-  margin: 100px auto;
-  font-size: 2.0em; }
+.section1-wrapper {
+  overflow: hidden;
+  margin: 0 3%; }
+  .section1-wrapper h2 {
+    text-align: center;
+    margin: 100px auto;
+    font-size: 2.0em; }
+  .section1-wrapper .section1 {
+    text-align: center;
+    display: grid;
+    grid-gap: 3%;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center; }
+  .section1-wrapper .about-card {
+    border: 1px solid #999;
+    border-radius: 10%; }
+    .section1-wrapper .about-card .about-icon {
+      margin: 75px 0px; }
+    .section1-wrapper .about-card .about-desc {
+      width: 80%;
+      margin: 0px auto 35px; }
 
-.section1 {
-  text-align: center;
-  display: grid;
-  grid-gap: 5%;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center; }
-  .section1 p {
-    padding: 40px 0; }
+@media (max-width: 768px) {
+  .section1-wrapper .section1 {
+    grid-template-columns: 1fr; }
+  .section1-wrapper .about-card {
+    margin: 10px auto;
+    width: 80%; } }
