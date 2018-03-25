@@ -3,9 +3,6 @@ nav
     width: 100%
     z-index: 1
 
-    .black ul
-        background: #000
-
     ul
         list-style: none
         background: rgba(0,0,0,0)
@@ -22,7 +19,7 @@ nav
 
             a
                 text-decoration: none
-                color: #000
+                color: #fff
                 font-size: 20px
 
     .menu-icon
@@ -34,6 +31,9 @@ nav
         cursor: pointer
         color: #fff
         display: none
+
+.black ul
+        background: #000
 
 .pimg1
     position: relative
@@ -53,7 +53,7 @@ nav
         font-size: 2.6em
         color: #fff
 
-// MEDIE QUERY
+// MEDIA QUERY
 
 @media(max-width: 580px)
     nav
@@ -68,14 +68,14 @@ nav
                 padding: 24px 0
                 text-align: center
 
-        .black ul
-                background: #000
-
         .showing
-                max-height: 20em
+            max-height: 20em
 
         .menu-icon
-                display: block
+            display: block
+
+    .black ul
+            background: #000
 
 
     

@@ -13,8 +13,6 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 1; }
-  nav .black ul {
-    background: #000; }
   nav ul {
     list-style: none;
     background: transparent;
@@ -29,7 +27,7 @@ nav {
       padding: 20px; }
       nav ul li a {
         text-decoration: none;
-        color: #000;
+        color: #fff;
         font-size: 20px; }
   nav .menu-icon {
     width: 100%;
@@ -40,6 +38,9 @@ nav {
     cursor: pointer;
     color: #fff;
     display: none; }
+
+.black ul {
+  background: #000; }
 
 .pimg1 {
   position: relative;
@@ -68,9 +69,9 @@ nav {
       width: 100%;
       padding: 24px 0;
       text-align: center; }
-  nav .black ul {
-    background: #000; }
   nav .showing {
     max-height: 20em; }
   nav .menu-icon {
-    display: block; } }
+    display: block; }
+  .black ul {
+    background: #000; } }
