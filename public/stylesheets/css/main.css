@@ -7,7 +7,7 @@ html, body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.8em;
-  color: #000; }
+  color: #666; }
 
 nav {
   position: fixed;
@@ -25,10 +25,12 @@ nav {
     nav ul li {
       display: inline-block;
       padding: 20px; }
+      nav ul li:hover {
+        background-color: #777; }
       nav ul li a {
         text-decoration: none;
         color: #fff;
-        font-size: 20px; }
+        font-size: 25px; }
   nav .menu-icon {
     width: 100%;
     background: #000;
@@ -57,7 +59,10 @@ nav {
     text-align: center;
     top: 40%;
     font-size: 2.6em;
-    color: #fff; }
+    color: #fff;
+    font-family: "Abril Fatface", cursive; }
+    .pimg1 .ptext span {
+      font-family: "Shadows Into Light", cursive; }
 
 @media (max-width: 580px) {
   nav ul {
@@ -75,3 +80,7 @@ nav {
     display: block; }
   .black ul {
     background: #000; } }
+
+.section1-wrapper {
+  display: grid;
+  grid-template-columns: 30%; }
