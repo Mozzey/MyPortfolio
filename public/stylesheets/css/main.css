@@ -53,6 +53,8 @@ nav {
   background-image: url("/../public/img/header.jpg");
   background-attachment: fixed;
   opacity: 0.7; }
+  .pimg1 #mainTitle {
+    width: 100%; }
   .pimg1 .ptext {
     position: absolute;
     width: 100%;
@@ -63,6 +65,10 @@ nav {
     font-family: "Abril Fatface", cursive; }
     .pimg1 .ptext span {
       font-family: "Shadows Into Light", cursive; }
+
+@media (max-width: 685px) {
+  #main-title {
+    font-size: 1.7em; } }
 
 @media (max-width: 580px) {
   nav ul {
@@ -79,8 +85,20 @@ nav {
   nav .menu-icon {
     display: block; }
   .black ul {
-    background: #000; } }
+    background: #000; }
+  .pimg1 {
+    font-size: 0.8em; } }
 
-.section1-wrapper {
+h2 {
+  text-align: center;
+  margin: 100px auto;
+  font-size: 2.0em; }
+
+.section1 {
+  text-align: center;
   display: grid;
-  grid-template-columns: 30%; }
+  grid-gap: 5%;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center; }
+  .section1 p {
+    padding: 40px 0; }
