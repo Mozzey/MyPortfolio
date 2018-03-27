@@ -1,6 +1,6 @@
 header
     width: 100%
-    height: 950px
+    height: 100%
 
     .pimg1
         position: absolute
@@ -9,15 +9,26 @@ header
         background-size: cover
         background-repeat: no-repeat
         background-position: center
-        background: #333 url('/../public/img/header.jpg')
+        background: #333 url('/../public/img/header2.jpeg')
         background-attachment: fixed
-        opacity: 0.6
+        opacity: 0.8
         z-index: -1
 
     nav
         position: fixed
         width: 100%
-        z-index: 9001
+        z-index: 10001
+
+        .menu-icon
+            width: 100%
+            background: #000
+            opacity: 0.8
+            text-align: right
+            box-sizing: border-box
+            padding: 15px 24px
+            cursor: pointer
+            color: #fff
+            display: none
 
         ul
             font-family: $shadowLight
@@ -37,22 +48,12 @@ header
                 &:hover
                     text-decoration: underline
 
-
                 a
                     text-decoration: none
                     color: #fff
                     font-size: 2.5em
 
-        .menu-icon
-            width: 100%
-            background: #999
-            opacity: 0.8
-            text-align: right
-            box-sizing: border-box
-            padding: 15px 24px
-            cursor: pointer
-            color: #fff
-            display: none
+        
 
     .ptext
         margin: 0 auto
@@ -63,8 +64,6 @@ header
         font-size: 2.6em
         color: #fff
         font-family: $fatFace
-        -webkit-text-stroke: 1px #888
-        paint-order: stroke fill
 
         .main-title
             width: 100%
@@ -73,34 +72,35 @@ header
             h1
                 letter-spacing: 5px
 
-        span
-            font-family: $shadowLight
+            p
+                font-family: $shadowLight
+                color: #000
 
-        #arrow
-            margin-top: 50px
-
-    .btn
-        color: #fff
-        margin: 150px auto 0
-        width: 20%
-
-        a
-            text-decoration: none
+        .btn
             color: #fff
+            margin: 150px auto 0
+            width: 20%
 
-            span
-                border: 2px solid #fff
-                padding: 0 5px
-                width: auto
-                
-                &:hover
-                    @extend %header-btn-hover
+            a
+                text-decoration: none
+                color: #fff
 
-    #mobile-arrow
-        display: none
+                span
+                    border: 2px solid #fff
+                    padding: 0 5px
+                    width: auto
+                    
+                    &:hover
+                        @extend %header-btn-hover
+
+            #arrow
+                margin-top: 50px
+
+        #mobile-arrow
+            display: none
 
 .black ul
-        background: #999
+        background: #000
         opacity: 0.8
 
 // MEDIA QUERY
@@ -111,7 +111,6 @@ header
             font-size: 1.8em
 
             span
-                -webkit-text-stroke: 0
                 color: #000
 
             .btn span
@@ -126,8 +125,8 @@ header
 
 @media(max-width: 580px)
     .black ul
-        background: #999
-        opacity: 0.8
+        background: #000
+        
     header
         .ptext
             font-size: 1.2em
@@ -146,10 +145,13 @@ header
                 
 
         nav
+            background-color: #000
+            opacity: 0.8
+
             ul
                 max-height: 0px
-                background: #999
-                opacity: 0.8
+                background: #000
+                opacity: 0.9
                 color: #fff
 
                 li
@@ -160,6 +162,9 @@ header
 
             .showing
                 max-height: 30em
+                width: 100%
+                opacity: 0.9
+                color: #000
 
             .menu-icon
                 display: block

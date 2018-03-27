@@ -1,4 +1,4 @@
-header .btn a span:hover {
+header .ptext .btn a span:hover {
   border: 2px solid #666;
   background-color: #999;
   opacity: 0.7;
@@ -13,14 +13,13 @@ html, body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.8em;
-  color: #666;
   -webkit-box-sizing: border-box;
     -webkit-box-sizing--moz-box-sizing: border-box;
     -webkit-box-sizing-box-sizing: border-box; }
 
 header {
   width: 100%;
-  height: 950px; }
+  height: 100%; }
   header .pimg1 {
     position: absolute;
     min-height: 100%;
@@ -28,14 +27,24 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background: #333 url("/../public/img/header.jpg");
+    background: #333 url("/../public/img/header2.jpeg");
     background-attachment: fixed;
-    opacity: 0.6;
+    opacity: 0.8;
     z-index: -1; }
   header nav {
     position: fixed;
     width: 100%;
-    z-index: 9001; }
+    z-index: 10001; }
+    header nav .menu-icon {
+      width: 100%;
+      background: #000;
+      opacity: 0.8;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none; }
     header nav ul {
       font-family: "Shadows Into Light", cursive;
       list-style: none;
@@ -55,16 +64,6 @@ header {
           text-decoration: none;
           color: #fff;
           font-size: 2.5em; }
-    header nav .menu-icon {
-      width: 100%;
-      background: #999;
-      opacity: 0.8;
-      text-align: right;
-      box-sizing: border-box;
-      padding: 15px 24px;
-      cursor: pointer;
-      color: #fff;
-      display: none; }
   header .ptext {
     margin: 0 auto;
     position: absolute;
@@ -73,41 +72,39 @@ header {
     top: 40%;
     font-size: 2.6em;
     color: #fff;
-    font-family: "Abril Fatface", cursive;
-    -webkit-text-stroke: 1px #888;
-    paint-order: stroke fill; }
+    font-family: "Abril Fatface", cursive; }
     header .ptext .main-title {
       width: 100%;
       opacity: 1.0; }
       header .ptext .main-title h1 {
         letter-spacing: 5px; }
-    header .ptext span {
-      font-family: "Shadows Into Light", cursive; }
-    header .ptext #arrow {
-      margin-top: 50px; }
-  header .btn {
-    color: #fff;
-    margin: 150px auto 0;
-    width: 20%; }
-    header .btn a {
-      text-decoration: none;
-      color: #fff; }
-      header .btn a span {
-        border: 2px solid #fff;
-        padding: 0 5px;
-        width: auto; }
-  header #mobile-arrow {
-    display: none; }
+      header .ptext .main-title p {
+        font-family: "Shadows Into Light", cursive;
+        color: #000; }
+    header .ptext .btn {
+      color: #fff;
+      margin: 150px auto 0;
+      width: 20%; }
+      header .ptext .btn a {
+        text-decoration: none;
+        color: #fff; }
+        header .ptext .btn a span {
+          border: 2px solid #fff;
+          padding: 0 5px;
+          width: auto; }
+      header .ptext .btn #arrow {
+        margin-top: 50px; }
+    header .ptext #mobile-arrow {
+      display: none; }
 
 .black ul {
-  background: #999;
+  background: #000;
   opacity: 0.8; }
 
 @media (max-width: 900px) {
   header .ptext {
     font-size: 1.8em; }
     header .ptext span {
-      -webkit-text-stroke: 0;
       color: #000; }
     header .ptext .btn span {
       border: 2px solid black; } }
@@ -118,8 +115,7 @@ header {
 
 @media (max-width: 580px) {
   .black ul {
-    background: #999;
-    opacity: 0.8; }
+    background: #000; }
   header .ptext {
     font-size: 1.2em; }
     header .ptext .btn {
@@ -131,73 +127,91 @@ header {
       header .ptext #mobile-arrow a {
         color: #fff;
         font-size: 1.5em; }
-  header nav ul {
-    max-height: 0px;
-    background: #999;
-    opacity: 0.8;
-    color: #fff; }
-    header nav ul li {
-      box-sizing: border-box;
+  header nav {
+    background-color: #000;
+    opacity: 0.8; }
+    header nav ul {
+      max-height: 0px;
+      background: #000;
+      opacity: 0.9;
+      color: #fff; }
+      header nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px 0;
+        text-align: center; }
+    header nav .showing {
+      max-height: 30em;
       width: 100%;
-      padding: 24px 0;
-      text-align: center; }
-  header nav .showing {
-    max-height: 30em; }
-  header nav .menu-icon {
-    display: block; } }
+      opacity: 0.9;
+      color: #000; }
+    header nav .menu-icon {
+      display: block; } }
 
 .section1-wrapper {
   overflow: hidden;
   width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  background-color: #777;
-  color: #fff;
-  border-bottom: 1px solid #333; }
+  background-color: #fff;
+  color: #666;
+  z-index: 10000; }
   .section1-wrapper h2 {
+    margin: 200px auto;
     text-align: center;
-    margin: 150px auto;
-    font-size: 2.0em; }
+    font-size: 3.0em; }
   .section1-wrapper .section1 {
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    margin: 100px auto;
     text-align: center;
     display: grid;
-    grid-gap: 3%;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2.5%;
+    grid-template-columns: 30% 30% 30%;
     justify-content: center; }
   .section1-wrapper .about-card {
-    border: 1px solid #999;
-    border-radius: 10%; }
+    border-radius: 25px;
+    margin: auto 25px; }
     .section1-wrapper .about-card .about-icon {
       margin: 75px 0px; }
+      .section1-wrapper .about-card .about-icon #code-icon {
+        color: #7a0606; }
+      .section1-wrapper .about-card .about-icon #travel-icon {
+        color: #936f42; }
+      .section1-wrapper .about-card .about-icon #laptop-icon {
+        color: #43773d; }
     .section1-wrapper .about-card .about-desc {
-      width: 80%;
-      margin: 0px auto 35px; }
+      width: 100%;
+      margin: 0 auto 35px; }
 
 @media (max-width: 768px) {
   .section1-wrapper .section1 {
-    grid-template-columns: 1fr; }
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-gap: 50px 0; }
   .section1-wrapper .about-card {
-    margin: 10px auto;
-    width: 80%; } }
+    margin: auto 150px; } }
+
+@media (max-width: 465px) {
+  .section1-wrapper .section1 .about-card {
+    margin: auto 10px; } }
 
 .section2-wrapper {
-  margin: 150px auto;
-  width: 100%; }
+  margin: 150px auto 0;
+  width: 100%;
+  height: 100%; }
   .section2-wrapper h2 {
     text-align: center;
-    margin: 150px 0;
-    font-size: 2.0em; }
+    margin: 150px auto;
+    font-size: 3.0em; }
   .section2-wrapper .section2-grid {
-    width: 90%;
+    width: 100%;
     margin: 50px auto;
     display: grid;
-    grid-gap: 100px;
     grid-template-columns: 1fr 1fr; }
     .section2-wrapper .section2-grid .progress-bar {
       position: relative;
-      width: 100%;
+      margin: 80px auto;
+      width: 90%;
       height: 40px;
       background: #eee;
       margin-bottom: 20px;
@@ -255,9 +269,14 @@ header {
       .section2-wrapper .section2-grid .progress-bar .node {
         background: #3E863D; }
 
+@media (max-width: 768px) {
+  .section2-wrapper .section2-grid {
+    display: grid;
+    grid-template-columns: 1fr; } }
+
 .pimg2 {
   position: absolute;
-  min-height: 500px;
+  min-height: 300px;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -272,35 +291,29 @@ header {
   margin: 150px auto; }
   .section3-wrapper h2 {
     text-align: center;
-    font-size: 2.0em; }
+    font-size: 3.0em; }
   .section3-wrapper .section3 {
     width: 100%;
-    margin: 150 auto; }
+    height: 100%;
+    margin: 350px auto 300px;
+    display: grid;
+    grid-gap: 100px 0;
+    grid-template-columns: 1fr 1fr; }
     .section3-wrapper .section3 .project-card {
+      width: 60%;
       border: 1px solid black;
       border-radius: 10px;
-      width: 80%;
-      height: 100%;
+      margin: auto auto;
       padding: 0;
-      margin: 100px auto;
       display: grid;
-      grid-gap: 10px;
-      grid-template-columns: 25% 65%; }
-      .section3-wrapper .section3 .project-card .project-image {
+      grid-template-rows: 1fr; }
+      .section3-wrapper .section3 .project-card .project-image img {
         width: 100%;
-        padding: 0;
-        margin: 0;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center; }
-        .section3-wrapper .section3 .project-card .project-image img {
-          width: 100%;
-          height: 100%;
-          border-radius: 10px; }
-          .section3-wrapper .section3 .project-card .project-image img a {
-            margin: 0;
-            padding: 0;
-            text-decoration: none; }
+        border-radius: 10px; }
+        .section3-wrapper .section3 .project-card .project-image img a {
+          margin: 0;
+          padding: 0;
+          text-decoration: none; }
       .section3-wrapper .section3 .project-card .project-desc p {
         width: 70%;
         margin: 0 auto;
@@ -314,3 +327,56 @@ header {
           font-weight: bold; }
         .section3-wrapper .section3 .project-card .project-desc ul li {
           display: inline; }
+
+@media (max-width: 1000px) {
+  .section3-wrapper .section3 {
+    grid-template-columns: 1fr; } }
+
+@media (max-width: 465px) {
+  .pimg2 {
+    margin-top: 365px; }
+  .section3-wrapper {
+    margin-top: 500px; }
+    .section3-wrapper h2 {
+      margin: 0 auto; }
+    .section3-wrapper .section3 {
+      margin-top: 250px;
+      margin-bottom: 0; }
+      .section3-wrapper .section3 .project-card {
+        width: 80%;
+        border: none; }
+        .section3-wrapper .section3 .project-card .project-desc {
+          display: none; } }
+
+.section4-wrapper {
+  width: 100%; }
+  .section4-wrapper .pimg3 {
+    position: absolute;
+    min-height: 100px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: #333 url("/../public/img/coffee-cup-working-happy.jpg");
+    background-attachment: fixed;
+    opacity: 0.6;
+    z-index: -1; }
+  .section4-wrapper h2 {
+    text-align: center;
+    font-size: 2em; }
+  .section4-wrapper .section4-grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 20%;
+    justify-content: center; }
+    .section4-wrapper .section4-grid .social-img {
+      width: 100%; }
+      .section4-wrapper .section4-grid .social-img a {
+        text-decoration: none;
+        width: 100%; }
+        .section4-wrapper .section4-grid .social-img a img {
+          width: 100%;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center; }

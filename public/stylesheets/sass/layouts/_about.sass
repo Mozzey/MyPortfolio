@@ -1,36 +1,44 @@
 .section1-wrapper
     overflow: hidden
     width: 100%
-    height: 100%
-    margin: 0 auto
-    background-color: #777
-    color: #fff
-    border-bottom: 1px solid #333
+    background-color: #fff
+    color: #666
+    z-index: 10000
 
     h2
+        margin: 200px auto
         text-align: center
-        margin: 150px auto
-        font-size: 2.0em
+        font-size: 3.0em
 
     .section1
-        width: 90%
-        margin: 0 auto
+        width: 100%
+        height: 100%
+        margin: 100px auto
         text-align: center
         display: grid
-        grid-gap: 3%
-        grid-template-columns: 1fr 1fr 1fr
+        grid-gap: 2.5%
+        grid-template-columns: 30% 30% 30%
         justify-content: center
 
     .about-card
-        border: 1px solid #999
-        border-radius: 10%
+        border-radius: 25px
+        margin: auto 25px
 
         .about-icon
             margin: 75px 0px
 
+            #code-icon
+                color: #7a0606
+
+            #travel-icon
+                color: #936f42
+
+            #laptop-icon
+                color: #43773d
+
         .about-desc
-            width: 80%
-            margin: 0px auto 35px
+            width: 100%
+            margin: 0 auto 35px
 
 
 
@@ -40,11 +48,21 @@
     .section1-wrapper
 
         .section1
+            width: 100%
+            height: 100%
             grid-template-columns: 1fr
+            grid-gap: 50px 0
 
         .about-card
-            margin: 10px auto
-            width: 80%
+            margin: auto 150px
 
+@media(max-width: 465px)
+    .section1-wrapper
+
+        .section1
+
+            .about-card
+                margin: auto 10px
+                
         
     
