@@ -56,8 +56,8 @@ header {
       margin: 0;
       transition: 1s; }
       header nav ul li {
-        display: inline-block;
-        padding: 20px; }
+        padding: 20px;
+        display: inline-block; }
         header nav ul li:hover {
           text-decoration: underline; }
         header nav ul li a {
@@ -120,36 +120,32 @@ header {
     font-size: 1.2em; }
     header .ptext .btn {
       display: none; }
-    header .ptext #mobile-arrow {
-      display: inline-block;
-      margin-top: 250px;
-      color: #fff; }
-      header .ptext #mobile-arrow a {
+      header .ptext .btn a {
         color: #fff;
         font-size: 1.5em; }
   header nav {
     background-color: #000;
-    opacity: 0.8; }
+    opacity: 0.8;
+    width: 100%; }
     header nav ul {
       max-height: 0px;
       background: #000;
       opacity: 0.9;
       color: #fff; }
       header nav ul li {
-        box-sizing: border-box;
         width: 100%;
+        box-sizing: border-box;
         padding: 24px 0;
         text-align: center; }
     header nav .showing {
       max-height: 30em;
-      width: 100%;
       opacity: 0.9;
       color: #000; }
     header nav .menu-icon {
       display: block; } }
 
 .section1-wrapper {
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100%;
   background-color: #fff;
   color: #666;
@@ -178,7 +174,9 @@ header {
         color: #936f42; }
       .section1-wrapper .about-card .about-icon #laptop-icon {
         color: #43773d; }
-    .section1-wrapper .about-card .about-desc {
+  .section1-wrapper .about-card:nth-of-type(3) {
+    overflow-x: hidden; }
+    .section1-wrapper .about-card:nth-of-type(3) .about-desc {
       width: 100%;
       margin: 0 auto 35px; }
 
@@ -217,7 +215,8 @@ header {
       background: #eee;
       margin-bottom: 20px;
       border-radius: 5px;
-      box-shadow: 0 1px 2px #222; }
+      box-shadow: 0 1px 2px #222;
+      overflow-x: hidden; }
       .section2-wrapper .section2-grid .progress-bar .title {
         position: absolute;
         width: 100px;
@@ -329,6 +328,8 @@ header {
           font-weight: bold; }
         .section3-wrapper .section3 .project-card .project-desc ul li {
           display: inline; }
+    .section3-wrapper .section3 .project-card:nth-of-type(2) {
+      overflow-x: hidden; }
 
 @media (max-width: 1000px) {
   .section3-wrapper .section3 {
@@ -351,18 +352,8 @@ header {
           display: none; } }
 
 .section4-wrapper {
-  width: 100%; }
-  .section4-wrapper .pimg3 {
-    position: absolute;
-    min-height: 250px;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background: #333 url("/../public/img/coffee-cup-working-happy.jpg");
-    background-attachment: fixed;
-    opacity: 0.6;
-    z-index: -1; }
+  width: 100%;
+  margin: 0 auto; }
   .section4-wrapper h2 {
     text-align: center;
     font-size: 2em; }

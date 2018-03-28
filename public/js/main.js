@@ -19,14 +19,6 @@ $(document).ready(function() {
         mobile: true,
         reset: false
     });
-    // NAV
-    sr.reveal('.rightSlide', {
-        duration: 2000,
-        distance: '50px',
-        origin: 'right',
-        mobile: true,
-        reset: false
-    });
     // HEADER TITLE
     sr.reveal('.headerName', {
         duration: 800,
@@ -51,8 +43,8 @@ $(document).ready(function() {
     });
     // READ MORE BTN
     sr.reveal('.btn', {
-        duration: 1000,
-        delay: 1500,
+        duration: 900,
+        delay: 1200,
         distance: '50px',
         origin: 'bottom',
         mobile: true,
@@ -65,37 +57,34 @@ $(document).ready(function() {
         distance: '50px',
         origin: 'top',
         mobile: true,
-        easing: 'ease-in',
+        easing: 'ease-in'
     });
     // ABOUT CARDS
     sr.reveal('.about1', {
-        duration: 1200,
-        distance: '50px',
+        duration: 900,
+        distance: '70px',
         origin: 'top',
         mobile: true,
-        easing: 'ease-in',
-        rotate: { x: 0, y: 150, z: 0 }
+        easing: 'ease-in'
     });
     sr.reveal('.about2', {
-        duration: 1200,
-        distance: '50px',
-        origin: 'top',
+        duration: 900,
+        distance: '70px',
+        origin: 'bottom',
         mobile: true,
-        easing: 'ease-in',
-        rotate: { x: 150, y: 0, z: 0 }
+        easing: 'ease-in'
     });
     sr.reveal('.about3', {
-        duration: 1200,
-        distance: '50px',
+        duration: 900,
+        distance: '70px',
         origin: 'top',
         mobile: true,
-        easing: 'ease-in',
-        rotate: { x: 0, y: -150, z: 0 }
+        easting: 'ease-in'
     });
     sr.reveal('.progress-bar', {
-        duration: 1200,
+        duration: 1000,
         distance: '50px',
-        origin: 'right',
+        origin: 'bottom',
         mobile: true,
         easing: 'ease-in'
     });
@@ -109,7 +98,7 @@ $(document).ready(function() {
     sr.reveal('.proj2', {
         duration: 1000,
         distance: '80px',
-        origin: 'right',
+        origin: 'left',
         mobile: true,
         easing: 'ease-in'
     });
