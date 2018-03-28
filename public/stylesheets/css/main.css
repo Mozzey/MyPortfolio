@@ -122,10 +122,15 @@ header {
     background: #000; }
   header .ptext {
     font-size: 1.2em; }
-    header .ptext .btn a {
-      font-size: 2em; }
+    header .ptext .main-title .headerName {
+      letter-spacing: 5px;
+      line-height: 1em; }
+    header .ptext .btn {
+      margin: 100px auto 0; }
       header .ptext .btn a span {
         display: none; }
+    header .ptext #arrow {
+      display: block; }
   header nav {
     background-color: #000;
     opacity: 0.8;
