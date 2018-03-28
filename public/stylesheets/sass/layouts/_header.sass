@@ -94,19 +94,19 @@ header
             #arrow
                 margin-top: 50px
 
-        #mobile-arrow
-            display: none
-
 .black ul
         background: #000
         opacity: 0.8
 
 // MEDIA QUERY
 
-@media(max-width: 900px)
+@media(max-width: 1110px)
     header
         .ptext
             font-size: 1.8em
+
+            p
+                font-size: 1.6em
 
             span
                 color: #000
@@ -115,10 +115,17 @@ header
                 border: 2px solid black
                 
     
-@media(max-width: 768px)
+@media(max-width: 796px)
     header
         .ptext
             font-size: 1.4em
+
+        .btn
+            a
+                font-size: 2em
+
+                span
+                    display: none
 
 
 @media(max-width: 580px)
@@ -130,12 +137,13 @@ header
             font-size: 1.2em
 
             .btn
-                display: none 
-                
                 a
-                    color: #fff
-                    font-size: 1.5em
-                
+                    font-size: 2em
+
+                    span
+                        display: none
+
+
         nav
             background-color: #000
             opacity: 0.8

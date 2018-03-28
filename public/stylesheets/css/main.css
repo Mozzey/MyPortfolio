@@ -94,35 +94,38 @@ header {
           width: auto; }
       header .ptext .btn #arrow {
         margin-top: 50px; }
-    header .ptext #mobile-arrow {
-      display: none; }
 
 .black ul {
   background: #000;
   opacity: 0.8; }
 
-@media (max-width: 900px) {
+@media (max-width: 1110px) {
   header .ptext {
     font-size: 1.8em; }
+    header .ptext p {
+      font-size: 1.6em; }
     header .ptext span {
       color: #000; }
     header .ptext .btn span {
       border: 2px solid black; } }
 
-@media (max-width: 768px) {
+@media (max-width: 796px) {
   header .ptext {
-    font-size: 1.4em; } }
+    font-size: 1.4em; }
+  header .btn a {
+    font-size: 2em; }
+    header .btn a span {
+      display: none; } }
 
 @media (max-width: 580px) {
   .black ul {
     background: #000; }
   header .ptext {
     font-size: 1.2em; }
-    header .ptext .btn {
-      display: none; }
-      header .ptext .btn a {
-        color: #fff;
-        font-size: 1.5em; }
+    header .ptext .btn a {
+      font-size: 2em; }
+      header .ptext .btn a span {
+        display: none; }
   header nav {
     background-color: #000;
     opacity: 0.8;
@@ -327,7 +330,8 @@ header {
         .section3-wrapper .section3 .project-card .project-desc ul span {
           font-weight: bold; }
         .section3-wrapper .section3 .project-card .project-desc ul li {
-          display: inline; }
+          display: inline;
+          font-weight: 400; }
     .section3-wrapper .section3 .project-card:nth-of-type(2) {
       overflow-x: hidden; }
 
@@ -335,11 +339,23 @@ header {
   .section3-wrapper .section3 {
     grid-template-columns: 1fr; } }
 
+@media (max-width: 786px) {
+  .pimg2 {
+    margin-top: 300px; }
+  .section3-wrapper {
+    margin-top: 450px; } }
+
+@media (max-width: 586px) {
+  .pimg2 {
+    margin-top: 600px; }
+  .section3-wrapper {
+    margin-top: 750px; } }
+
 @media (max-width: 465px) {
   .pimg2 {
-    margin-top: 365px; }
+    margin-top: 465px; }
   .section3-wrapper {
-    margin-top: 500px; }
+    margin-top: 615px; }
     .section3-wrapper h2 {
       margin: 0 auto; }
     .section3-wrapper .section3 {
